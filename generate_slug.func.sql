@@ -42,8 +42,8 @@ BEGIN
   SET str = tr(
             tr(
                 LOWER(str)
-                , 'áàäâãåéèëêíìïîóòöôõúùüûñýç'
-                , 'aaaaaaeeeeiiiiooooouuuunyc'
+                , 'áàäâãåéèëêíìïîóòöôõúùüûñýçğş'
+                , 'aaaaaaeeeeiiiiooooouuuunycgs'
             )
             , '\\#$%&/¿?¡!¬|@~«<{[()]}>»·*+-=_.,;:ªº^°"''`´‘’”“'
             , NULL
