@@ -45,7 +45,7 @@ BEGIN
                 , 'áàäâãåéèëêíìïîóòöôõúùüûñýçğş'
                 , 'aaaaaaeeeeiiiiooooouuuunycgs'
             )
-            , '\\#$%&/¿?¡!¬|@~«<{[()]}>»·*+-=_.,;:ªº^°"''`´‘’”“'
+            , '\\#$%&/¿?¡!¬|@~«<{[()]}>»·*+=.,;:ªº^°"''`´‘’”“'
             , NULL
   );
 
@@ -53,7 +53,15 @@ BEGIN
     SET str = REPLACE(str, '  ', ' ');
   END WHILE;
 
-  RETURN REPLACE(str, ' ', '-');
+  RETURN REPLACE(
+                  REPLACE(
+                           str
+                          ,'_'
+                          ,'-'
+                  )
+                  , ' '
+                  , '-'
+  );
 END
 //
 
