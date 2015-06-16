@@ -1,4 +1,4 @@
-i/**
+/**
  * strtr.func.sql
  * MySQL UDF implementation of strtr C function, added the
  * functionality to remove characters when dict_to 
